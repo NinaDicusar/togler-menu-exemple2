@@ -1,0 +1,42 @@
+body{
+   --light-color: darkorange;
+   --dark-color: #333;
+   --text-color:white;
+ font-size: 30px;
+  
+}
+body{
+    background-color:var(--dark-color) ;
+}
+#bottom-menu{
+   
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    overflow: hidden;
+
+
+}
+#bottom-menu a{
+    background-color: var(--light-color);
+    display: block;
+    box-shadow: 10px 5px 5px 1px;
+   
+    padding:0.5em;
+    margin-bottom: 0.2em;
+    border-radius: 100%;
+    color: var(--text-color);
+    box-shadow:2px 5px 5px 1px rgb(33, 26, 26);
+
+    transform: translateY(6.6em);
+
+  }
+ 
+#bottom-menu:target a{
+    transform: translateY(0);
+}
+
+
+#bottom-menu li:last-child a{
+    margin-bottom: 0;
+}
